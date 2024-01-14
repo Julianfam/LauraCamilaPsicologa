@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '/public/assets/images/icons_478376.svg';
+import logo from '/public/assets/imgpsicologia/LauraCamilaLOGO-06.png';
 
 export default function Header() {
   return (
@@ -12,12 +12,12 @@ export default function Header() {
             <Image
               src={logo}
               alt="Icon"
-              className="w-50 h-50
-           text-white p-2  bg-indigo-500 rounded-full"
-              width={50}
-              height={50}
+              className="w-70 h-70
+           text-white p-2  rounded-full"
+              width={70}
+              height={70}
             />
-            <span className="ml-3 text-xl">FotoGronomy</span>
+            <span className="ml-3 text-xl">Psicologa Laura Camila</span>
           </div>
         </Link>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">

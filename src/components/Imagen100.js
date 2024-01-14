@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
-import image1 from '/public/assets/images/image07.jpg';
+import image1 from '/public/assets/imgpsicologia/PlantillaVolante-01.jpg';
 import image2 from '/public/assets/images/image18.jpg';
 import image3 from '/public/assets/images/image23.jpg';
 

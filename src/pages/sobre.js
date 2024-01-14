@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import imgSobre from '/public/assets/images/image04.jpg';
+import imgSobre from '/public/assets/imgpsicologia/IMG_1410_0112.jpg';
 
-const title = 'Te ayudamos a llamar la atención';
-const subtitle = 'Fotografía provocativa';
-const description = 'con mas de 4 años de experiencia trabajando en el sector gastronomicos y de productos, se les garantiza un trabajo especializado y acorde a lo que desean expresar';
+const title = 'Estoy para ayudarte';
+const subtitle = 'Terapia profesional';
+const description = 'Es una mujer linda y preparada, y muy fuerte, con su calidez,ternura y comprensión lograras superar cualquier situacion que te incomode ';
 
 export default function sobre() {
   return (
@@ -21,7 +21,7 @@ export default function sobre() {
           </h1>
           <p className="mb-8 leading-relaxed">{description}</p>
           <div className="flex justify-center">
-            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Dale calidad a tu imagen</button>
+            <button className="inline-flex text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg">Resuelve tus dudas</button>
           </div>
         </div>
       </div>
