@@ -1,0 +1,227 @@
+[33mcommit 1e7695d99bd1b6ff676acab15589b75d6a5f286a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Sat Jan 13 21:38:37 2024 -0500
+
+    segundo deploy con posibles correcciones o daños
+
+[33mcommit db15c1040e16f0322fe9e630d260cfe4f28f444f[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Sat Jan 13 20:00:22 2024 -0500
+
+    intentando solucionar problemas de webpack
+
+[33mcommit 920857a236311c13bbaa571bdcd4607d363a8460[m[33m ([m[1;31mLauraCamilaPsicologa/main[m[33m, [m[1;31mLauraCamilaPsicologa/HEAD[m[33m)[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Sat Jan 13 19:36:29 2024 -0500
+
+    Proyecto de Landing page configurando contenido
+
+[33mcommit 2869421d8a1906f74f43030735322c60c9bd1a34[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Wed Jan 10 19:59:02 2024 -0500
+
+    lint corregido
+
+[33mcommit 936d242af20ac795725d59326879af9437f88cc8[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Wed Jan 10 19:55:02 2024 -0500
+
+    correcion de varios estilos y textos, correxion de todas las imagenes, ya solo queda contenido, 95% funcional, ya puede operar
+
+[33mcommit 3267b56d1e61188ec83121222947916c1dd67ef0[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Wed Jan 10 19:26:39 2024 -0500
+
+    correccion slint
+
+[33mcommit dab04d4414f107bc029a379a323fa6b0a92e5e28[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Wed Jan 10 19:12:49 2024 -0500
+
+    correccion de imagen100
+
+[33mcommit 13b28c372b22c1a06ff62b22115fd79a629dc443[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Wed Jan 10 18:41:52 2024 -0500
+
+    se agrego texto de la pagina principal, sobre y producto, se agrego el banner txt superior
+
+[33mcommit 2b9059dba4e7ff6daa9ff1b6165ded4c3cbc376d[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Tue Jan 2 15:20:28 2024 -0500
+
+    Arreglos y anexos de clientes
+
+[33mcommit dc6d7a301af17a4947261a2446aadfa8dc610e70[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Tue Jan 2 15:00:39 2024 -0500
+
+    prueba de velocidad
+
+[33mcommit 827357b0f4d68896919a4acf299b8315bd8335bd[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Tue Jan 2 14:58:06 2024 -0500
+
+    mas texto
+
+[33mcommit 122ad0a71ddba94d4bd2a92239b137fa9ab52a92[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Tue Jan 2 14:42:08 2024 -0500
+
+    primer anexo de contenido
+
+[33mcommit 4dab5a5280c2c76c43ea6e6c94580a6ff4d9db67[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Tue Jan 2 10:53:39 2024 -0500
+
+    correciones imagen 100
+
+[33mcommit 988366c1707dcfee44812ae112d29e8d06db7959[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Tue Jan 2 10:32:13 2024 -0500
+
+    nuevointentodecorrecion
+
+[33mcommit 94acb223f3316b1ade749c9fd6b5aa86f37e7035[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Tue Jan 2 10:27:35 2024 -0500
+
+    correccion imagen100 no esta ajustando en mobile
+
+[33mcommit 3c03a07bdd6379f0f498545425763fda77d904fe[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Tue Jan 2 09:55:00 2024 -0500
+
+    correccion imagenes100 ya cubre la pagina como era esperado
+
+[33mcommit fab075cd43c389ad0e49007586fb2ab96bd68eff[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Tue Jan 2 09:36:56 2024 -0500
+
+    logo corregido imagenes corregitdas slint aplicado, punto para edicion de contenido
+
+[33mcommit 52b1d32ae41b431c66f9d4fe902926c160ab0a59[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Tue Jan 2 09:29:57 2024 -0500
+
+    icono arreglado
+
+[33mcommit 8942cf3cc1e7ae0275b18e2be154f8c877149958[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Tue Jan 2 09:22:45 2024 -0500
+
+    correccion anterior fallida
+
+[33mcommit 44c2c0956301cf31894d4a8fcaf45c24cb060b80[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Tue Jan 2 09:20:27 2024 -0500
+
+    corrreccion imagen 100
+
+[33mcommit 7a7b19b2674ee1225d7fcbe165a3b595efe31641[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Thu Dec 28 10:43:09 2023 -0500
+
+    corregidos el 90%de los errores, queda el logo pero se logro, esta casi terminal
+
+[33mcommit cbee423905303739caf973c76a959de0c651f1c8[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Wed Nov 22 17:06:34 2023 -0500
+
+    agregada seccion clientes y planes y precios
+
+[33mcommit 7cc564b872780bf6a5b17375ed1b4f52e1e7046d[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Wed Nov 22 16:35:33 2023 -0500
+
+    commit antes de agregar precios o info a la principal, checkpoint2
+
+[33mcommit 8b861c881f3b562d9ff3bf6b0e477a1e23c5f9cd[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Thu Nov 16 20:40:46 2023 -0500
+
+    correccion color txt imagen galeria
+
+[33mcommit a579cede94d549ab63bcd215a0f9d3c41f5cb917[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Tue Nov 14 17:06:54 2023 -0500
+
+    corregi el fondo del main image y le agrege opacidad
+
+[33mcommit 64cc502d4e1d62fe7314f44c59723340c819d0a7[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Tue Nov 14 16:56:03 2023 -0500
+
+    edicion del texto de las imagenes
+
+[33mcommit 972aa1ea0a51b94aceb220d49a8d394c24282b75[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Tue Nov 14 16:24:35 2023 -0500
+
+    blanco derecho eliminado
+
+[33mcommit fbe55e41b23bd17d550b3fb7988b66c7da59656a[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Tue Nov 14 10:21:43 2023 -0500
+
+    galeria con carga infinita configurada, imagenes cargadas
+
+[33mcommit 6d3047b00de2d6e1e60c257ffe39516640776a96[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Mon Nov 6 18:35:00 2023 -0500
+
+    se agrega el carrousel del home
+
+[33mcommit 521d6017a9764e3cb6ccdd6ed54edf451ec7dd26[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Mon Nov 6 17:25:44 2023 -0500
+
+    lo mismo
+
+[33mcommit 6c11490978e321a9fb1e604e54c94500d2e59d55[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Mon Nov 6 17:20:42 2023 -0500
+
+    un poco mas de texto
+
+[33mcommit 82c2781e5426189e63fc26e5b6e3d5de89efac7c[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Mon Nov 6 17:11:25 2023 -0500
+
+    correccion de mas textos y links
+
+[33mcommit d68125c501e9015547c0f0cf8b0862df901f2815[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Mon Nov 6 16:58:03 2023 -0500
+
+    algunos textos modificados}
+
+[33mcommit 1a001b40505541ef793573a0f0c70b0f253fe769[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Mon Nov 6 16:47:54 2023 -0500
+
+    estructura de la web terminada
+
+[33mcommit 252592a1d72cb7c94f7888d2aa83ce88468f8f3c[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Mon Nov 6 15:52:59 2023 -0500
+
+    commit con el primer footer centrado
+
+[33mcommit f8eaea7a02ee2ee6f6594c422c98d4c8a747beb3[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Mon Nov 6 13:33:05 2023 -0500
+
+    iniciando los primeros bloques
+
+[33mcommit 238b10162946bb546459d0f43208c959db606f1e[m
+Author: Julian Andrade <julifeli123@gmail.com>
+Date:   Mon Nov 6 13:16:13 2023 -0500
+
+    primer commit configurado para iniciar con el proyecto FOTOGRONOMY
+
+[33mcommit f10458cde35632ed4a5abcb0137d43b4f1b02516[m
+Author: Julianfam <86161859+Julianfam@users.noreply.github.com>
+Date:   Mon Nov 6 12:58:56 2023 -0500
+
+    Initial commit

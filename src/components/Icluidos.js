@@ -5,22 +5,15 @@ const pitchforkTitle = 'Especializados en Gastronomia y Producto, Potenciamos la
 const pitchforkDescription =
   'Potencia tu presencia culinaria con nuestro servicio integral. Desde estilismo profesional hasta ediciones personalizadas con Inteligencia Artificial, ofrecemos la combinación perfecta para que tus platos destaquen. Con nosotros, tu gastronomía se convierte en una narrativa visual cautivadora. ';
 
-const cardTitles = [
-  'Maquillaje Profesional de Alimentos',
-  'Shorts? Reels?',
-  'Mejora con Inteligencia Artificial(IA)',
-  'Ediciones a tu medida: Tu toque, tu Marca',
-  'Fotografía y Video',
-  'Fotos, videos Y Ediciones a tu medida',
-];
+const cardTitles = ['Consulta Virtual', 'Consulta Presencial', 'Consulta Pareja', 'Solicitud Especializada', 'Profesionalismo Garantizado', 'Devolución Gratuita'];
 
 const cardContents = [
-  'Transforma tus platillos en obras maestras visuales. ¡Haz que la presentación de tus alimentos sea tan deliciosa para los ojos como para el paladar!',
-  'Conquista las redes sociales con contenido corto y memorable. Diferénciate en Shorts y Reels para destacar en un mundo de atención fugaz.',
-  'Eleva tu vida con la magia de la Inteligencia Artificial. Descubre cómo la IA puede ser tu aliada para un crecimiento personal y profesional imparable.',
-  'Personaliza tu marca con ediciones que reflejen tu esencia. ¡Haz que cada pieza visual cuente tu historia de manera única!',
-  'Captura la esencia de momentos inolvidables. Aprende a contar historias impactantes a través de la lente y el movimiento.',
-  'Da vida a tu visión con contenido visual personalizado. Desde fotos hasta videos, cada pieza será una expresión auténtica de tu estilo y marca.',
+  'Vive la experiencia de nuestra Consulta Virtual con iluminación profesional, maquillador de alimentos y grabación en alta definición. ¡Contacta para reservar tu sesión ahora!',
+  'Sumérgete en un día completo de producción, planificación y edición incluidas. Contrata tu día y transforma tu visión en realidad.',
+  'Descubre la magia de nuestras Consultas para Parejas, disponibles por meses o campañas. Suscríbete para contar tu historia de manera encantadora.',
+  'Crea recuerdos inolvidables con escenografía personalizada. Deja un mensaje y hagamos realidad tu visión única.',
+  'Confía en nuestro equipo de profesionales dedicados a capturar momentos únicos con experiencia y habilidades excepcionales.',
+  'Nos comprometemos a tu satisfacción. Si no estás satisfecho con los resultados, te ofrecemos una devolución gratuita. Tu confianza es nuestra prioridad.',
 ];
 
 const buttonText = 'Button';

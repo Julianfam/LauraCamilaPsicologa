@@ -3,8 +3,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
-import image1 from '/public/assets/imgpsicologia/PlantillaVolante-01.jpg';
-import image2 from '/public/assets/images/image18.jpg';
+import image1 from '/public/assets/imgpsicologia/imgterapiapsi.jpg';
+import image2 from '/public/assets/imgpsicologia/bateriapsicosocial2.jpg';
 import image3 from '/public/assets/images/image23.jpg';
 
 export default function Imagen100() {
@@ -12,18 +12,19 @@ export default function Imagen100() {
 
   const textContent = [
     {
-      categoryText: 'Fotografía y Maquillaje de Alimentos',
-      titleText: 'Capturar el sabor a través del lente',
-      descriptionText: 'Fotografía gastronomica',
-      learnMoreText: 'Descubre mas Fotos',
+      categoryText: 'Atencion Psicologica presencial y virtual',
+      titleText: 'Atención especializada en adolecentes, jóvenes y adultos',
+      descriptionText: 'Encuentra tu lugar seguro',
+      descriptionText2: ' Te acompañamos en tus retos personales',
+      learnMoreText: 'más información',
       likesText: '1.2K 1',
       commentsText: '6 1',
     },
     {
-      categoryText: 'Fotografía de Producto',
-      titleText: 'Tomas Únicas para tus dispositivos',
-      descriptionText: 'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat 2.',
-      learnMoreText: 'Learn More 2',
+      categoryText: 'Servicios organizacionales presenciales y virtuales',
+      titleText: 'Asesoría y acompañamiento empresarial',
+      descriptionText: 'Bateria de riesgo psicosocial, asesoría en gestión humana y formación',
+      learnMoreText: 'más información',
       likesText: '1.2K 2',
       commentsText: '6 2',
     },
@@ -43,6 +44,8 @@ export default function Imagen100() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
   };
 
   const imageContainerStyle = {
@@ -70,6 +73,7 @@ export default function Imagen100() {
                   <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1 responsive-text">{textContent[index].categoryText}</h2>
                   <h1 className="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3 responsive-text">{textContent[index].titleText}</h1>
                   <p className="leading-relaxed mb-3 responsive-text">{textContent[index].descriptionText}</p>
+                  <p className="leading-relaxed mb-3 responsive-text">{textContent[index].descriptionText2}</p>
                   <button
                     className="text-indigo-500 inline-flex items-center responsive-text"
                     onClick={() => {
