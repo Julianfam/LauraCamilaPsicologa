@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Textos modificables
-const pitchforkTitle = 'Especializados en Gastronomia y Producto, Potenciamos la edicion con IA';
+const pitchforkTitle = 'Especializada en Psicología de seguridad y salud en el trabajo';
 const pitchforkDescription =
   'Potencia tu presencia culinaria con nuestro servicio integral. Desde estilismo profesional hasta ediciones personalizadas con Inteligencia Artificial, ofrecemos la combinación perfecta para que tus platos destaquen. Con nosotros, tu gastronomía se convierte en una narrativa visual cautivadora. ';
 
