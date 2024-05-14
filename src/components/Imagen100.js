@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
 import image1 from '/public/assets/imgpsicologia/imgterapiapsi.jpg';
 import image2 from '/public/assets/imgpsicologia/bateriapsicosocial2.jpg';
-import image3 from '/public/assets/images/image23.jpg';
+import image3 from '/public/assets/imgpsicologia/bateriapsicosocial.jpg';
 
 export default function Imagen100() {
   const imageUrls = [image1, image2, image3];
