@@ -40,12 +40,14 @@ export default function Imagen100() {
 
   const sliderSettings = {
     dots: true,
+    arrows: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+
   };
 
   const imageContainerStyle = {
