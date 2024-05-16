@@ -1,14 +1,13 @@
 import React from 'react';
 
 import Imagen100 from '../components/Imagen100';
-import SeccionConIcluidos from '@components/Icluidos';
+import Testimonials from '@components/Testimonials';
 
 export default function Home() {
   return (
     <>
       <Imagen100 />
-
-      <SeccionConIcluidos />
+      <Testimonials />
       {/* Agrega aquí otros componentes o contenido que desees */}
     </>
   );
