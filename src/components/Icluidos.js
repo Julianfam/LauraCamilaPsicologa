@@ -1,9 +1,11 @@
 import React from 'react';
+import Image from 'next/image';
+import imgcard1 from '/public/assets/imgpsicologia/imgterapiapsi.jpg';
 
 // Textos modificables
 const pitchforkTitle = 'Especializada en Psicología de seguridad y salud en el trabajo';
 const pitchforkDescription =
-  'Potencia tu presencia culinaria con nuestro servicio integral. Desde estilismo profesional hasta ediciones personalizadas con Inteligencia Artificial, ofrecemos la combinación perfecta para que tus platos destaquen. Con nosotros, tu gastronomía se convierte en una narrativa visual cautivadora. ';
+  'Nos especializamos en problemas y trastornos psicológicos, incluyendo depresión, ansiedad, trastornos de alimentación, procesos suicidas, trastornos del sueño y adicciones. Además, también trabajamos con parejas y familias que están lidiando con problemas de relación y dinámicas disfuncionales. A través del proceso terapéutico, nuestro objetivo es ayudar a las personas a identificar los patrones de interacción y comunicación disfuncionales que están causando su malestar y fomentar la resolución de los problemas que enfrentan. Utilizamos el enfoque sistémico para ver a las personas como parte de un sistema más amplio en el que interactúan con otros individuos, grupos y organizaciones, para así identificar las relaciones y patrones de interacción que están afectando el bienestar emocional del consultante';
 
 const cardTitles = ['Consulta Virtual', 'Consulta Presencial', 'Consulta Pareja', 'Solicitud Especializada', 'Profesionalismo Garantizado', 'Devolución Gratuita'];
 
@@ -16,7 +18,11 @@ const cardContents = [
   'Nos comprometemos a tu satisfacción. Si no estás satisfecho con los resultados, te ofrecemos una devolución gratuita. Tu confianza es nuestra prioridad.',
 ];
 
-const buttonText = 'Button';
+const cardImages = [imgcard1, imgcard1, imgcard1, imgcard1, imgcard1, imgcard1];
+
+const cardLinks = ['/consulta-virtual', '/consulta-presencial', '/consulta-pareja', '/solicitud-especializada', '/profesionalismo-garantizado', '/devolucion-gratuita'];
+
+const buttonText = 'Más información';
 
 const SeccionConIcluidos = () => {
   return (
@@ -32,23 +38,22 @@ const SeccionConIcluidos = () => {
           {cardTitles.map((title, index) => (
             <div key={index} className="xl:w-1/3 md:w-1/2 p-4">
               <div className="border border-gray-200 p-6 rounded-lg">
-                {/* Icono */}
-                <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-red-100 text-red-500 mb-4">
-                  <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                  </svg>
+                {/* Imagen */}
+                <div className="w-full h-40 mb-4 relative">
+                  <Image src={cardImages[index]} alt={title} layout="fill" objectFit="cover" className="rounded-lg" />
                 </div>
                 {/* Título */}
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2">{title}</h2>
                 {/* Contenido */}
                 <p className="leading-relaxed text-base">{cardContents[index]}</p>
+                {/* Botón */}
+                <a href={cardLinks[index]} className="flex mx-auto mt-4 text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">
+                  {buttonText}
+                </a>
               </div>
             </div>
           ))}
         </div>
-
-        {/* Botón */}
-        <button className="flex mx-auto mt-16 text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">{buttonText}</button>
       </div>
     </section>
   );
