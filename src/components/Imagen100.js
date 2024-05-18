@@ -32,7 +32,7 @@ export default function Imagen100() {
       categoryText: 'Fotografía y video Aéreo',
       titleText: 'Capturar el sabor a través del aire',
       descriptionText: 'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat 3.',
-      learnMoreText: 'Learn More 3',
+      learnMoreText: 'Mas información',
       likesText: '1.2K 3',
       commentsText: '6 3',
     },
@@ -76,7 +76,7 @@ export default function Imagen100() {
                   <p className="leading-relaxed mb-3 responsive-text">{textContent[index].descriptionText}</p>
                   <p className="leading-relaxed mb-3 responsive-text">{textContent[index].descriptionText2}</p>
                   <button
-                    className="text-indigo-500 inline-flex items-center responsive-text"
+                    className="text-red-300 inline-flex items-center responsive-text"
                     onClick={() => {
                       // Handle click event
                       const galeriaIntroSection = document.getElementById('galeriaIntroSection');
