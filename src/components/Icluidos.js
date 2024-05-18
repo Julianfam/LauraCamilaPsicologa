@@ -45,9 +45,9 @@ const SeccionConIcluidos = () => {
                 {/* Título */}
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-2">{title}</h2>
                 {/* Contenido */}
-                <p className="leading-relaxed text-base">{cardContents[index]}</p>
+                <p className="leading-relaxed text-justify text-base">{cardContents[index]}</p>
                 {/* Botón */}
-                <a href={cardLinks[index]} className="flex mx-auto mt-4 text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">
+                <a href={cardLinks[index]} className="flex mx-auto justify-center mt-4 text-black bg-red-100 border-0 py-2 px-8 focus:outline-none hover:bg-red-300 rounded text-lg">
                   {buttonText}
                 </a>
               </div>

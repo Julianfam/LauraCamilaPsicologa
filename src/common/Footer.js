@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import img1 from '/public/assets/imgpsicologia/LauraCamilaLOGO-06.png';
 
 const Footer = () => {
   // Constants for category section
@@ -98,13 +99,13 @@ const Footer = () => {
       <div className="bg-gray-100">
         <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
           <button className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900 cursor-pointer">
-            <Image src="/public/assets/images/icons_478376.svg" alt="Icon" className="text-white p-2 bg-indigo-500 rounded-full" width={15} height={15} />
-            <span className="ml-3 text-xl">FotoGronomy</span>
+            <Image src={img1} alt="Icon" className="text-white p-1 bg-red-100 rounded-full" width={70} height={70} />
+            <span className="ml-3 text-xl">Psicologa Laura Camila</span>
           </button>
           <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
-            © 2024 FotoGronomy —
+            Psicologa Laura camila
             <a href="www.juliandev.tech" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">
-              @julianandrade
+              © 2024 @julianandrade
             </a>
           </p>
         </div>
