@@ -30,7 +30,7 @@ const services = {
   },
   'terapia-de-familia': {
     title: 'Terapia de Familia',
-    image: '/assets/imgpservicios/terapia-familiar.webp',
+    image: '/assets/imgservicios/terapia-familiar.webp',
     description:
       'La terapia familiar mejora la comunicación y la comprensión mutua dentro del núcleo familiar. Ayudamos a resolver conflictos constructivamente y fortalecemos los lazos familiares, creando un entorno saludable y armonioso mediante técnicas especializadas.',
     points: [
@@ -41,7 +41,7 @@ const services = {
   },
   'terapia-de-ninos-y-adolescentes': {
     title: 'Terapia de Niños y Adolescentes',
-    image: '/assets/imgpservicios/terapia-jovenes.jpg',
+    image: '/assets/imgservicios/terapia-jovenes.jpg',
     description:
       'Abordamos problemas emocionales y de comportamiento en niños y adolescentes, como ansiedad, depresión y dificultades académicas. Ofrecemos apoyo integral y trabajamos con los padres en prácticas de crianza, estableciendo normas y límites para un desarrollo saludable.',
     points: [
@@ -52,7 +52,7 @@ const services = {
   },
   'terapia-de-grupos': {
     title: 'Terapia de Grupos',
-    image: '/assets/imgpservicios/img-grupal.jpg',
+    image: '/assets/imgservicios/terapia-grupal.jpg',
     description:
       'La terapia en grupo proporciona apoyo y conexión entre personas con desafíos similares. En un entorno confidencial y colaborativo, los participantes comparten experiencias personales, fomentando el crecimiento personal, la comprensión mutua y el desarrollo de habilidades para afrontar obstáculos.',
     points: [

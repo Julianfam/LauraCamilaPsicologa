@@ -54,8 +54,8 @@ const SeccionConIcluidosInstitucional = () => {
                 {/* Contenido */}
                 <p className="leading-relaxed text-justify text-base">{cardContents[index]}</p>
                 {/* Botón */}
-                <Link href={cardLinks[index]} passHref>
-                  <a className="flex mx-auto justify-center mt-4 text-black bg-red-100 border-0 py-2 px-8 focus:outline-none hover:bg-red-300 rounded text-lg">{buttonText}</a>
+                <Link href={cardLinks[index]} passHref className="flex mx-auto justify-center mt-4 text-black bg-red-100 border-0 py-2 px-8 focus:outline-none hover:bg-red-300 rounded text-lg">
+                  {buttonText}
                 </Link>
               </div>
             </div>

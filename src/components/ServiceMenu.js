@@ -10,7 +10,7 @@ const ServiceMenu = ({ services, basePath }) => {
           <li key={index} className="mb-2">
             <Link legacyBehavior href={`${basePath}/${service.slug}`}>
               <div>
-              <a className="text-indigo-600 hover:underline">{service.title}</a>
+                <button className="text-indigo-600 hover:underline">{service.title}</button>
               </div>
             </Link>
           </li>

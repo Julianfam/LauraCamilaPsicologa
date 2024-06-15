@@ -47,22 +47,22 @@ const Footer = () => {
             <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">{categoryText}</h2>
             <nav className="list-none mb-10">
               <div className="mr-5 hover:text-gray-900 cursor-pointer">
-                <Link href="/" passHref>
+                <Link href="/" passHref legacyBehavior>
                   <button>Home</button>
                 </Link>
               </div>
               <div className="mr-5 hover-text-gray-900 cursor-pointer">
-                <Link href="/gastronomia" passHref>
+                <Link href="/gastronomia" passHref legacyBehavior>
                   <div>Gastronomia</div>
                 </Link>
               </div>
               <div className="mr-5 hover-text-gray-900 cursor-pointer">
-                <Link href="/producto" passHref>
+                <Link href="/producto" passHref legacyBehavior>
                   <div>Producto</div>
                 </Link>
               </div>
               <div className="mr-5 hover-text-gray-900 cursor-pointer">
-                <Link href="/contacto" passHref>
+                <Link href="/contacto" passHref legacyBehavior>
                   <div>Contacto</div>
                 </Link>
               </div>

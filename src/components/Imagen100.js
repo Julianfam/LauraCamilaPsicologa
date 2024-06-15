@@ -3,9 +3,9 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
-import image1 from '/public/assets/imgpsicologia/imgterapiapsi.jpg';
-import image2 from '/public/assets/imgpsicologia/bateriapsicosocial2.jpg';
-import image3 from '/public/assets/imgpsicologia/bateriapsicosocial.jpg';
+import image1 from '/public/assets/imgservicios/terapia-familiar.webp';
+import image2 from '/public/assets/imgservicios/laura-bateria.jpg';
+import image3 from '/public/assets/imgservicios/terapia-grupal.jpg';
 
 export default function Imagen100() {
   const imageUrls = [image1, image2, image3];
@@ -29,8 +29,8 @@ export default function Imagen100() {
       commentsText: '6 2',
     },
     {
-      categoryText: 'Fotografía y video Aéreo',
-      titleText: 'Capturar el sabor a través del aire',
+      categoryText: 'Asesorias empresariales',
+      titleText: 'Capacitaciones Grupales',
       descriptionText: 'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat 3.',
       learnMoreText: 'Mas información',
       likesText: '1.2K 3',

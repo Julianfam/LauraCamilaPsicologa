@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import { FaHeart, FaRegClock, FaUserFriends, FaMoneyBillWave } from 'react-icons/fa';
 
 const ServiceDetail = ({ service }) => {
   return (
