@@ -12,10 +12,10 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
-      <h1 ref={titleRef} className="text-4xl font-bold mb-8 p-3">
+      <h1 ref={titleRef} className="text-4xl font-bold mb-4 p-1">
         soy la Psicologa Laura Camila
       </h1>
-      <h3 className="text-2xl mb-8 w-96 p-3 ">
+      <h3 className="text-2xl mb-4 w-96 p-1 ">
         {' '}
         Este es mi portal de contacto, los invito a conocer un poco mas de mis servicios en la web, o contactarme directamente por whatsapp, si quieres ver tips sigueme en instagram{' '}
       </h3>
