@@ -23,7 +23,7 @@ const cardContents = [
 
 const cardImages = [imgi, imgp, imgf, imgcard1, imgg];
 
-const cardLinks = ['/serviciosdetalles', '/serviciosdetalles', '/serviciosdetalles', '/serviciosdetalles', '/serviciosdetalles', '/devolucion-gratuita'];
+const cardLinks = ['/servicios/terapia-individual', '/servicios/terapia-de-pareja', '/servicios/terapia-de-familia', '/servicios/terapia-de-ninos-y-adolescentes', '/servicios/terapia-de-grupos'];
 
 const buttonText = 'Más información';
 

@@ -4,13 +4,14 @@ import imgb from '/public/assets/imgservicios/laura-bateria.jpg';
 import imgl from '/public/assets/imgservicios/laura-liderando.jpg';
 import imgh from '/public/assets/imgservicios/laura-habilidades.jpg';
 import imgf from '/public/assets/imgservicios/plan-de-formacion-en-empresas.jpg';
+import Link from 'next/link'; // Importar Link de next.js para la navegación
 
 // Textos modificables
-const pitchforkTitle = 'Servicios Intitucionales';
+const pitchforkTitle = 'Servicios Institucionales';
 const pitchforkDescription =
-  'Nos especializamos en problemas y trastornos psicológicos, incluyendo depresión, ansiedad, trastornos de alimentación, procesos suicidas, trastornos del sueño y adicciones. Además, también trabajamos con parejas y familias que están lidiando con problemas de ';
+  'Nos especializamos en problemas y trastornos psicológicos, incluyendo depresión, ansiedad, trastornos de alimentación, procesos suicidas, trastornos del sueño y adicciones. Además, también trabajamos con parejas y familias que están lidiando con problemas de relación y dinámicas disfuncionales.';
 
-const cardTitles = ['Bateria de riesgo Psicosocial', 'Formación y capacitación', 'Liderazgo', 'Habilidades blandas'];
+const cardTitles = ['Batería de riesgo Psicosocial', 'Formación y capacitación', 'Liderazgo', 'Habilidades blandas'];
 
 const cardContents = [
   'Evaluamos y prevenimos riesgos psicosociales laborales en Colombia. Identificamos factores como el estrés y el acoso, implementando planes personalizados para un entorno laboral saludable.',
@@ -21,11 +22,16 @@ const cardContents = [
 
 const cardImages = [imgb, imgf, imgl, imgh];
 
-const cardLinks = ['/serviciosdetalles', '/serviciosdetalles', '/serviciosdetalles', 'serviciosdetalles', '/profesionalismo-garantizado', '/devolucion-gratuita'];
+const cardLinks = [
+  '/servicios-empresariales/bateria-de-riesgo-psicosocial',
+  '/servicios-empresariales/formacion-y-capacitacion',
+  '/servicios-empresariales/liderazgo',
+  '/servicios-empresariales/habilidades-blandas',
+];
 
 const buttonText = 'Más información';
 
-const SeccionConIcluidosinstitucional = () => {
+const SeccionConIcluidosInstitucional = () => {
   return (
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto">
@@ -48,9 +54,9 @@ const SeccionConIcluidosinstitucional = () => {
                 {/* Contenido */}
                 <p className="leading-relaxed text-justify text-base">{cardContents[index]}</p>
                 {/* Botón */}
-                <a href={cardLinks[index]} className="flex mx-auto justify-center mt-4 text-black bg-red-100 border-0 py-2 px-8 focus:outline-none hover:bg-red-300 rounded text-lg">
-                  {buttonText}
-                </a>
+                <Link href={cardLinks[index]} passHref>
+                  <a className="flex mx-auto justify-center mt-4 text-black bg-red-100 border-0 py-2 px-8 focus:outline-none hover:bg-red-300 rounded text-lg">{buttonText}</a>
+                </Link>
               </div>
             </div>
           ))}
@@ -60,4 +66,4 @@ const SeccionConIcluidosinstitucional = () => {
   );
 };
 
-export default SeccionConIcluidosinstitucional;
+export default SeccionConIcluidosInstitucional;
