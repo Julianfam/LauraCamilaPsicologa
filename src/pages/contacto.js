@@ -1,48 +1,39 @@
-export default function Contacto() {
+import React, { useEffect, useRef } from 'react';
+import Image from 'next/image';
+import imgcard from '/public/assets/imgservicios/laura-habilidades.jpg';
+
+const Contact = () => {
+  const titleRef = useRef(null);
+
+  useEffect(() => {
+    // Enfoque del título h1 cuando la página se carga
+    titleRef.current.scrollIntoView({ behavior: 'smooth' });
+  }, []);
+
   return (
-    <div className="container mx-auto py-12">
-      <h1 className="text-4xl font-bold text-indigo-600 mb-6">Contáctanos</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div>
-          <h2 className="text-2xl font-semibold mb-2 text-indigo-600">Información de contacto</h2>
-          <p className="text-gray-700">Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros.</p>
-          <p className="text-gray-700 mt-4">BOGOTÁ - COLOMBIA</p>
-          <p className="text-gray-700">Teléfono: 3202502648</p>
-          <p className="text-gray-700">Correo electrónico: info@example.com</p>
-        </div>
-        <div>
-          <h2 className="text-2xl font-semibold mb-2 text-indigo-600">Formulario de contacto</h2>
-          <form>
-            <div className="mb-4">
-              <label htmlFor="nombre" className="block text-sm font-medium text-gray-700">
-                Nombre
-              </label>
-              <input type="text" id="nombre" name="nombre" className="mt-1 p-2 border rounded w-full focus:ring focus:ring-indigo-300" placeholder="Escribe tu nombre" />
-            </div>
-            <div className="mb-4">
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                Correo electrónico
-              </label>
-              <input type="email" id="email" name="email" className="mt-1 p-2 border rounded w-full focus:ring focus:ring-indigo-300" placeholder="example@example.com" />
-            </div>
-            <div className="mb-4">
-              <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700">
-                Mensaje
-              </label>
-              <textarea
-                id="mensaje"
-                name="mensaje"
-                rows="4"
-                className="mt-1 p-2 border rounded w-full focus:ring focus:ring-indigo-300"
-                placeholder="Escribenos tus dudas, inquietudes o requerimientos, pronto te respondemos."
-              />
-            </div>
-            <button type="submit" className="px-6 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 focus:ring focus:ring-indigo-300">
-              Enviar
-            </button>
-          </form>
-        </div>
+    <div className="min-h-screen flex flex-col justify-center items-center">
+      <h1 ref={titleRef} className="text-4xl font-bold mb-8 p-3">
+        soy la Psicologa Laura Camila
+      </h1>
+      <h3 className="text-2xl mb-8 w-96 p-3 ">
+        {' '}
+        Este es mi portal de contacto, los invito a conocer un poco mas de mis servicios en la web, o contactarme directamente por whatsapp, si quieres ver tips sigueme en instagram{' '}
+      </h3>
+      <Image src={imgcard} alt="Tausha 3 Salsas" style={{ maxHeight: '80%', maxWidth: '400px', width: '80%', overflow: 'hidden' }} />
+      <div className="flex flex-col items-center w-full py-4 ">
+        <a href="https://laura-camila-psicologa.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <button className="bg-white hover:bg-gray-100 text-gray-800  font-semibold py-2 px-8 w-72  border border-gray-400 rounded-lg shadow w-90vw mb-4">WEB</button>
+        </a>
+
+        <a href="https://www.instagram.com/psicologa.lauracamila/" target="_blank" rel="noopener noreferrer">
+          <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-8 w-72 border border-gray-400 rounded-lg shadow w-90vw mb-4">INSTAGRAM</button>
+        </a>
+        <a href="https://wa.me/3224714724" target="_blank" rel="noopener noreferrer">
+          <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-8 w-72 border border-gray-400 rounded-lg shadow w-90vw">WHATSAPP</button>
+        </a>
       </div>
     </div>
   );
-}
+};
+
+export default Contact;
