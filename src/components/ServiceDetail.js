@@ -26,9 +26,6 @@ const ServiceDetail = ({ service }) => {
           </div>
 
           {/* Botón de compra */}
-          <div>
-            <button className="bg-indigo-500 text-white py-2 px-4 rounded hover:bg-indigo-700 transition duration-300">Comprar Sesión</button>
-          </div>
         </div>
       </div>
     </div>

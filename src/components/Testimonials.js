@@ -36,11 +36,11 @@ const testimonials = [
     rating: 5,
   },
   {
-    name: 'Laura',
+    name: 'Alejandra',
     role: '35 años',
     image: 'https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg',
     quote:
-      'Después de experimentar una pérdida devastadora en mi vida, me encontré luchando contra la tristeza y la desesperación. Sentía que no podía seguir adelante y me cerraba emocionalmente a todos. La terapia me ayudó a atravesar el proceso de duelo de una manera saludable y constructiva. Mi terapeuta me proporcionó el apoyo y la comprensión que tanto necesitaba durante ese difícil período. Aprendí a aceptar y conocer mis emociones, a permitirme sentir. La terapia me ayudó a sanar y a encontrar la esperanza nuevamente.',
+      'La terapia fue como volver a respirar. Todas mis expectativas personales y laborales se desmoronaron; todo lo que pensaba que quería se desvaneció al darme cuenta de que no era mi verdadera vida. Caí en una profunda depresión, pero gracias a la terapia, hoy puedo ver con claridad lo que realmente deseo para mi vida. Lo más importante es que ahora soy feliz.',
     rating: 5,
   },
 ];

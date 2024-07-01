@@ -68,11 +68,27 @@ const ServicePage = () => {
   const { slug } = router.query;
   const service = services[slug];
 
+  const handleWhatsAppMessage = () => {
+    if (service) {
+      const message = `Estoy interesado en obtener más información sobre el servicio ${service.title}`;
+      window.open(`https://api.whatsapp.com/send?phone=573224714724&text=${encodeURIComponent(message)}`, '_blank');
+    }
+  };
+
   if (!service) {
     return <div>Servicio no encontrado</div>;
   }
 
-  return <ServiceDetail service={service} />;
+  return (
+    <div>
+      <ServiceDetail service={service} />
+      <div className="text-center mt-8">
+        <button onClick={handleWhatsAppMessage} className="bg-red-300 hover:bg-red-500 text-white font-bold py-2 px-4 rounded">
+          Contactar por WhatsApp
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default ServicePage;
