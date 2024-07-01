@@ -70,7 +70,7 @@ const ServicePage = () => {
       <ServiceDetail service={service} />
       <div className="text-center mt-8">
         <button onClick={handleWhatsAppMessage} className="bg-red-300 hover:bg-red-500 text-white font-bold py-2 px-4 rounded">
-          Solicita este servicio por WhatsApp
+          Solicita este servicio dando Click Aquí
         </button>
       </div>
     </div>
