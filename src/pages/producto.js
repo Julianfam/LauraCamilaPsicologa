@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
 
 // Componente de Tarjeta de Precio
-const PriceCard = ({ title, price, features, buttonText, onPackageChange, selectedPackage }) => {
+const PriceCard = ({ title, price, features, buttonText, selectedPackage, onPackageChange }) => {
+  const [sessionCount, setSessionCount] = useState(1); // Estado para almacenar la cantidad de sesiones seleccionada
+
   const handleClick = () => {
-    if (selectedPackage && selectedPackage !== 'default') {
-      const message = `Estoy interesado en el servicio ${title} que cuesta ${price}`;
-      window.open(`https://api.whatsapp.com/send?phone=573224714724&text=${encodeURIComponent(message)}`, '_blank');
+    if (onPackageChange) {
+      if (selectedPackage && selectedPackage !== 'default') {
+        const message = `Estoy interesado en el servicio ${title} que consta de ${sessionCount} sesión(es) que cuesta ${price}.`;
+        window.open(`https://api.whatsapp.com/send?phone=573224714724&text=${encodeURIComponent(message)}`, '_blank');
+      } else {
+        alert('Por favor selecciona un paquete antes de continuar.');
+      }
     } else {
-      alert('Por favor selecciona un paquete antes de continuar.');
+      const message = `Estoy interesado en el servicio ${title} que cuesta ${price}.`;
+      window.open(`https://api.whatsapp.com/send?phone=573224714724&text=${encodeURIComponent(message)}`, '_blank');
     }
   };
 
@@ -27,23 +34,98 @@ const PriceCard = ({ title, price, features, buttonText, onPackageChange, select
           </p>
         ))}
         {onPackageChange && (
-          <select value={selectedPackage || 'default'} onChange={onPackageChange} className="mt-4 mb-4 p-2 border border-gray-300 rounded">
-            <option disabled value="default">
-              Seleccione un paquete
-            </option>
-            <option value="online_single">$80,000 - Consulta Online</option>
-            <option value="online_2">$152,000 - Paquete Online (2 sesiones)</option>
-            <option value="online_4">$288,000 - Paquete Online (4 sesiones)</option>
-            <option value="online_8">$544,000 - Paquete Online (8 sesiones)</option>
-            <option value="presencial_consultorio_single">$134,000 - Consulta Presencial Consultorio</option>
-            <option value="presencial_consultorio_2">$254,600 - Paquete Presencial Consultorio (2 sesiones)</option>
-            <option value="presencial_consultorio_4">$482,400 - Paquete Presencial Consultorio (4 sesiones)</option>
-            <option value="presencial_consultorio_8">$911,200 - Paquete Presencial Consultorio (8 sesiones)</option>
-            <option value="presencial_naturaleza_single">$115,000 - Consulta Presencial Naturaleza</option>
-            <option value="presencial_naturaleza_2">$218,500 - Paquete Presencial Naturaleza (2 sesiones)</option>
-            <option value="presencial_naturaleza_4">$414,000 - Paquete Presencial Naturaleza (4 sesiones)</option>
-            <option value="presencial_naturaleza_8">$782,000 - Paquete Presencial Naturaleza (8 sesiones)</option>
-          </select>
+          <div>
+            <select
+              value={selectedPackage || 'default'}
+              onChange={(e) => {
+                onPackageChange(e);
+                // Actualizar automáticamente la cantidad de sesiones
+                switch (e.target.value) {
+                  case 'online_single':
+                    setSessionCount(1);
+                    break;
+                  case 'online_2':
+                    setSessionCount(2);
+                    break;
+                  case 'online_4':
+                    setSessionCount(4);
+                    break;
+                  case 'online_8':
+                    setSessionCount(8);
+                    break;
+                  case 'presencial_consultorio_single':
+                    setSessionCount(1);
+                    break;
+                  case 'presencial_consultorio_2':
+                    setSessionCount(2);
+                    break;
+                  case 'presencial_consultorio_4':
+                    setSessionCount(4);
+                    break;
+                  case 'presencial_consultorio_8':
+                    setSessionCount(8);
+                    break;
+                  case 'presencial_naturaleza_single':
+                    setSessionCount(1);
+                    break;
+                  case 'presencial_naturaleza_2':
+                    setSessionCount(2);
+                    break;
+                  case 'presencial_naturaleza_4':
+                    setSessionCount(4);
+                    break;
+                  case 'presencial_naturaleza_8':
+                    setSessionCount(8);
+                    break;
+                  default:
+                    setSessionCount(1);
+                    break;
+                }
+              }}
+              className="mt-4 mb-4 p-2 border border-gray-300 rounded"
+            >
+              <option disabled value="default">
+                Seleccione un paquete
+              </option>
+              <option id="online_single" value="online_single">
+                $80,000 - Consulta Online
+              </option>
+              <option id="online_2" value="online_2">
+                $152,000 - Paquete Online (2 sesiones)
+              </option>
+              <option id="online_4" value="online_4">
+                $288,000 - Paquete Online (4 sesiones)
+              </option>
+              <option id="online_8" value="online_8">
+                $544,000 - Paquete Online (8 sesiones)
+              </option>
+              <option id="presencial_consultorio_single" value="presencial_consultorio_single">
+                $134,000 - Consulta Presencial Consultorio
+              </option>
+              <option id="presencial_consultorio_2" value="presencial_consultorio_2">
+                $254,600 - Paquete Presencial Consultorio (2 sesiones)
+              </option>
+              <option id="presencial_consultorio_4" value="presencial_consultorio_4">
+                $482,400 - Paquete Presencial Consultorio (4 sesiones)
+              </option>
+              <option id="presencial_consultorio_8" value="presencial_consultorio_8">
+                $911,200 - Paquete Presencial Consultorio (8 sesiones)
+              </option>
+              <option id="presencial_naturaleza_single" value="presencial_naturaleza_single">
+                $115,000 - Consulta Presencial Naturaleza
+              </option>
+              <option id="presencial_naturaleza_2" value="presencial_naturaleza_2">
+                $218,500 - Paquete Presencial Naturaleza (2 sesiones)
+              </option>
+              <option id="presencial_naturaleza_4" value="presencial_naturaleza_4">
+                $414,000 - Paquete Presencial Naturaleza (4 sesiones)
+              </option>
+              <option id="presencial_naturaleza_8" value="presencial_naturaleza_8">
+                $782,000 - Paquete Presencial Naturaleza (8 sesiones)
+              </option>
+            </select>
+            <p className="mt-2 text-gray-600">Cantidad de sesiones seleccionadas: {sessionCount}</p>
+          </div>
         )}
         <button onClick={handleClick} className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">
           {buttonText}
@@ -62,7 +144,7 @@ const Producto = () => {
   const [selectedPackageIndividual, setSelectedPackageIndividual] = useState('online_single');
   const [selectedPackagePareja, setSelectedPackagePareja] = useState('presencial_consultorio_single');
   const [selectedPackageNinos, setSelectedPackageNinos] = useState('presencial_naturaleza_single');
-  const [selectedPackageFamilia, setSelectedPackageFamilia] = useState('');
+  const [selectedPackageFamilia, setSelectedPackageFamilia] = useState('presencial_consultorio_single');
 
   const handlePackageChangeIndividual = (e) => {
     setSelectedPackageIndividual(e.target.value);
@@ -151,43 +233,67 @@ const Producto = () => {
         'Mejora de la comunicación y comprensión mutua.',
         'Construcción de una base sólida para enfrentar desafíos juntos.',
       ],
-      buttonText: 'Contrata tu Día. ',
+      buttonText: 'Contactanos',
       onPackageChange: handlePackageChangePareja,
       selectedPackage: selectedPackagePareja,
     },
     {
       title: 'Terapia de Familia',
       price:
-        selectedPackageFamilia === 'presencial_consultorio_single'
+        selectedPackageFamilia === 'online_single'
           ? '$80,000'
-          : selectedPackageFamilia === 'presencial_consultorio_2'
+          : selectedPackageFamilia === 'online_2'
           ? '$152,000'
-          : selectedPackageFamilia === 'presencial_consultorio_4'
+          : selectedPackageFamilia === 'online_4'
           ? '$288,000'
-          : selectedPackageFamilia === 'presencial_consultorio_8'
+          : selectedPackageFamilia === 'online_8'
           ? '$544,000'
-          : selectedPackageFamilia === 'presencial_naturaleza_single'
+          : selectedPackageFamilia === 'presencial_consultorio_single'
           ? '$134,000'
-          : selectedPackageFamilia === 'presencial_naturaleza_2'
+          : selectedPackageFamilia === 'presencial_consultorio_2'
           ? '$254,600'
-          : selectedPackageFamilia === 'presencial_naturaleza_4'
+          : selectedPackageFamilia === 'presencial_consultorio_4'
           ? '$482,400'
-          : selectedPackageFamilia === 'presencial_naturaleza_8'
+          : selectedPackageFamilia === 'presencial_consultorio_8'
           ? '$911,200'
+          : selectedPackageFamilia === 'presencial_naturaleza_single'
+          ? '$115,000'
+          : selectedPackageFamilia === 'presencial_naturaleza_2'
+          ? '$218,500'
+          : selectedPackageFamilia === 'presencial_naturaleza_4'
+          ? '$414,000'
+          : selectedPackageFamilia === 'presencial_naturaleza_8'
+          ? '$782,000'
           : '',
       features: [
         'Mejora de la comunicación y comprensión mutua entre miembros de la familia.',
         'Resolución constructiva de conflictos familiares.',
         'Fortalecimiento de los lazos familiares y creación de un entorno armonioso.',
       ],
-      buttonText: 'Subscribe',
+      buttonText: 'Contactanos',
       onPackageChange: handlePackageChangeFamilia,
       selectedPackage: selectedPackageFamilia,
     },
     {
       title: 'Terapia de Niños y Adolescentes',
       price:
-        selectedPackageNinos === 'presencial_naturaleza_single'
+        selectedPackageNinos === 'online_single'
+          ? '$80,000'
+          : selectedPackageNinos === 'online_2'
+          ? '$152,000'
+          : selectedPackageNinos === 'online_4'
+          ? '$288,000'
+          : selectedPackageNinos === 'online_8'
+          ? '$544,000'
+          : selectedPackageNinos === 'presencial_consultorio_single'
+          ? '$134,000'
+          : selectedPackageNinos === 'presencial_consultorio_2'
+          ? '$254,600'
+          : selectedPackageNinos === 'presencial_consultorio_4'
+          ? '$482,400'
+          : selectedPackageNinos === 'presencial_consultorio_8'
+          ? '$911,200'
+          : selectedPackageNinos === 'presencial_naturaleza_single'
           ? '$80,000'
           : selectedPackageNinos === 'presencial_naturaleza_2'
           ? '$152,000'
@@ -201,7 +307,7 @@ const Producto = () => {
         'Desarrollo de habilidades académicas y sociales.',
         'Colaboración con los padres para mejorar prácticas de crianza y establecer normas y límites.',
       ],
-      buttonText: 'Dejanos un Mensaje',
+      buttonText: 'Contactanos',
       onPackageChange: handlePackageChangeNinos,
       selectedPackage: selectedPackageNinos,
     },
@@ -227,13 +333,13 @@ const Producto = () => {
       title: 'Liderazgo',
       price: '$300,000',
       features: ['Mejora de la comunicación efectiva.', 'Creación de un ambiente inclusivo.', 'Potenciación del bienestar y productividad de los equipos.'],
-      buttonText: 'reserva tu cita',
+      buttonText: 'Contactanos',
     },
     {
       title: 'Habilidades blandas',
       price: '$300,000',
       features: ['Mejora de la inteligencia emocional y empatía.', 'Fortalecimiento del trabajo en equipo y liderazgo.', 'Desarrollo de adaptabilidad y resolución de conflictos.'],
-      buttonText: 'reserva tu cita',
+      buttonText: 'Contactanos',
     },
   ];
 
