@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const TallerMiedos = () => {
+const Taller = () => {
   const [step, setStep] = useState(1);
   const [name, setName] = useState('');
   const [id] = useState(`ID-${Math.floor(Math.random() * 10000)}`);
@@ -225,4 +225,4 @@ const TallerMiedos = () => {
   );
 };
 
-export default TallerMiedos;
+export default Taller;
