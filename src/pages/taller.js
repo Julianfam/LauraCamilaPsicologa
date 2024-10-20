@@ -166,15 +166,15 @@ const Taller = () => {
         <div>
           <h2 className="text-xl font-bold mb-4">Paso 2: Reflexiona sobre tu miedo</h2>
           <label htmlFor="reflexionMiedo" className="block mb-2">
-            Escribe tu reflexión sobre el miedo:
+            ¿Qué situaciones te paralizan o te causan ansiedad extrema?
           </label>
           <textarea id="reflexionMiedo" className="border p-2 rounded w-full mb-2" rows="3" value={reflexionMiedo} onChange={(e) => setReflexionMiedo(e.target.value)} />
           <label htmlFor="reflexionMiedo2" className="block mb-2">
-            Escribe otra reflexión:
+            ¿El miedo te domina o tú controlas tu miedo?
           </label>
           <textarea id="reflexionMiedo2" className="border p-2 rounded w-full mb-2" rows="3" value={reflexionMiedo2} onChange={(e) => setReflexionMiedo2(e.target.value)} />
           <label htmlFor="reflexionMiedo3" className="block mb-2">
-            Escribe otra reflexión:
+            ¿Por qué crees que desarrollamos fobias?
           </label>
           <textarea id="reflexionMiedo3" className="border p-2 rounded w-full mb-2" rows="3" value={reflexionMiedo3} onChange={(e) => setReflexionMiedo3(e.target.value)} />
           <div className="mt-4 flex justify-between">
