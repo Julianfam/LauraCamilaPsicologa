@@ -88,40 +88,40 @@ const PriceCard = ({ title, price, features, buttonText, selectedPackage, onPack
                 Seleccione un paquete
               </option>
               <option id="online_single" value="online_single">
-                $80,000 - Consulta Online
+                $88,000 - Consulta Online
               </option>
               <option id="online_2" value="online_2">
-                $152,000 - Paquete Online (2 sesiones)
+                $167,200 - Paquete Online (2 sesiones)
               </option>
               <option id="online_4" value="online_4">
-                $288,000 - Paquete Online (4 sesiones)
+                $316,800 - Paquete Online (4 sesiones)
               </option>
               <option id="online_8" value="online_8">
-                $544,000 - Paquete Online (8 sesiones)
+                $598,400 - Paquete Online (8 sesiones)
               </option>
               <option id="presencial_consultorio_single" value="presencial_consultorio_single">
-                $134,000 - Consulta Presencial Consultorio
+                $147,400 - Consulta Presencial Consultorio
               </option>
               <option id="presencial_consultorio_2" value="presencial_consultorio_2">
-                $254,600 - Paquete Presencial Consultorio (2 sesiones)
+                $280,060 - Paquete Presencial Consultorio (2 sesiones)
               </option>
               <option id="presencial_consultorio_4" value="presencial_consultorio_4">
-                $482,400 - Paquete Presencial Consultorio (4 sesiones)
+                $530,640 - Paquete Presencial Consultorio (4 sesiones)
               </option>
               <option id="presencial_consultorio_8" value="presencial_consultorio_8">
-                $911,200 - Paquete Presencial Consultorio (8 sesiones)
+                $1,002,320 - Paquete Presencial Consultorio (8 sesiones)
               </option>
               <option id="presencial_naturaleza_single" value="presencial_naturaleza_single">
-                $115,000 - Consulta Presencial Naturaleza
+                $126,500 - Consulta Presencial Naturaleza
               </option>
               <option id="presencial_naturaleza_2" value="presencial_naturaleza_2">
-                $218,500 - Paquete Presencial Naturaleza (2 sesiones)
+                $240,350 - Paquete Presencial Naturaleza (2 sesiones)
               </option>
               <option id="presencial_naturaleza_4" value="presencial_naturaleza_4">
-                $414,000 - Paquete Presencial Naturaleza (4 sesiones)
+                $455,400 - Paquete Presencial Naturaleza (4 sesiones)
               </option>
               <option id="presencial_naturaleza_8" value="presencial_naturaleza_8">
-                $782,000 - Paquete Presencial Naturaleza (8 sesiones)
+                $860,200 - Paquete Presencial Naturaleza (8 sesiones)
               </option>
             </select>
             <p className="mt-2 text-gray-600">Cantidad de sesiones seleccionadas: {sessionCount}</p>
@@ -167,29 +167,29 @@ const Producto = () => {
       title: 'Terapia Individual',
       price:
         selectedPackageIndividual === 'online_single'
-          ? '$80,000'
+          ? '$88,000'
           : selectedPackageIndividual === 'online_2'
-          ? '$152,000'
+          ? '$167,200'
           : selectedPackageIndividual === 'online_4'
-          ? '$288,000'
+          ? '$316,800'
           : selectedPackageIndividual === 'online_8'
-          ? '$544,000'
+          ? '$598,400'
           : selectedPackageIndividual === 'presencial_consultorio_single'
-          ? '$134,000'
+          ? '$147,400'
           : selectedPackageIndividual === 'presencial_consultorio_2'
-          ? '$254,600'
+          ? '$280,060'
           : selectedPackageIndividual === 'presencial_consultorio_4'
-          ? '$482,400'
+          ? '$530,640'
           : selectedPackageIndividual === 'presencial_consultorio_8'
-          ? '$911,200'
+          ? '$1,002,320'
           : selectedPackageIndividual === 'presencial_naturaleza_single'
-          ? '$115,000'
+          ? '$126,500'
           : selectedPackageIndividual === 'presencial_naturaleza_2'
-          ? '$218,500'
+          ? '$240,350'
           : selectedPackageIndividual === 'presencial_naturaleza_4'
-          ? '$414,000'
+          ? '$455,400'
           : selectedPackageIndividual === 'presencial_naturaleza_8'
-          ? '$782,000'
+          ? '$860,200'
           : '',
       features: [
         'Mejora de la salud emocional y física al tratar depresión y ansiedad.',
@@ -204,29 +204,29 @@ const Producto = () => {
       title: 'Terapia de Pareja',
       price:
         selectedPackagePareja === 'online_single'
-          ? '$80,000'
+          ? '$88,000'
           : selectedPackagePareja === 'online_2'
-          ? '$152,000'
+          ? '$167,200'
           : selectedPackagePareja === 'online_4'
-          ? '$288,000'
+          ? '$316,800'
           : selectedPackagePareja === 'online_8'
-          ? '$544,000'
+          ? '$598,400'
           : selectedPackagePareja === 'presencial_consultorio_single'
-          ? '$134,000'
+          ? '$147,400'
           : selectedPackagePareja === 'presencial_consultorio_2'
-          ? '$254,600'
+          ? '$280,060'
           : selectedPackagePareja === 'presencial_consultorio_4'
-          ? '$482,400'
+          ? '$530,640'
           : selectedPackagePareja === 'presencial_consultorio_8'
-          ? '$911,200'
+          ? '$1,002,320'
           : selectedPackagePareja === 'presencial_naturaleza_single'
-          ? '$115,000'
+          ? '$126,500'
           : selectedPackagePareja === 'presencial_naturaleza_2'
-          ? '$218,500'
+          ? '$240,350'
           : selectedPackagePareja === 'presencial_naturaleza_4'
-          ? '$414,000'
+          ? '$455,400'
           : selectedPackagePareja === 'presencial_naturaleza_8'
-          ? '$782,000'
+          ? '$860,200'
           : '',
       features: [
         'Fortalecimiento de la relación mediante herramientas para superar obstáculos.',
@@ -241,29 +241,29 @@ const Producto = () => {
       title: 'Terapia de Familia',
       price:
         selectedPackageFamilia === 'online_single'
-          ? '$80,000'
+          ? '$88,000'
           : selectedPackageFamilia === 'online_2'
-          ? '$152,000'
+          ? '$167,200'
           : selectedPackageFamilia === 'online_4'
-          ? '$288,000'
+          ? '$316,800'
           : selectedPackageFamilia === 'online_8'
-          ? '$544,000'
+          ? '$598,400'
           : selectedPackageFamilia === 'presencial_consultorio_single'
-          ? '$134,000'
+          ? '$147,400'
           : selectedPackageFamilia === 'presencial_consultorio_2'
-          ? '$254,600'
+          ? '$280,060'
           : selectedPackageFamilia === 'presencial_consultorio_4'
-          ? '$482,400'
+          ? '$530,640'
           : selectedPackageFamilia === 'presencial_consultorio_8'
-          ? '$911,200'
+          ? '$1,002,320'
           : selectedPackageFamilia === 'presencial_naturaleza_single'
-          ? '$115,000'
+          ? '$126,500'
           : selectedPackageFamilia === 'presencial_naturaleza_2'
-          ? '$218,500'
+          ? '$240,350'
           : selectedPackageFamilia === 'presencial_naturaleza_4'
-          ? '$414,000'
+          ? '$455,400'
           : selectedPackageFamilia === 'presencial_naturaleza_8'
-          ? '$782,000'
+          ? '$860,200'
           : '',
       features: [
         'Mejora de la comunicación y comprensión mutua entre miembros de la familia.',
@@ -278,29 +278,29 @@ const Producto = () => {
       title: 'Terapia de Niños y Adolescentes',
       price:
         selectedPackageNinos === 'online_single'
-          ? '$80,000'
+          ? '$88,000'
           : selectedPackageNinos === 'online_2'
-          ? '$152,000'
+          ? '$167,200'
           : selectedPackageNinos === 'online_4'
-          ? '$288,000'
+          ? '$316,800'
           : selectedPackageNinos === 'online_8'
-          ? '$544,000'
+          ? '$598,400'
           : selectedPackageNinos === 'presencial_consultorio_single'
-          ? '$134,000'
+          ? '$147,400'
           : selectedPackageNinos === 'presencial_consultorio_2'
-          ? '$254,600'
+          ? '$280,060'
           : selectedPackageNinos === 'presencial_consultorio_4'
-          ? '$482,400'
+          ? '$530,640'
           : selectedPackageNinos === 'presencial_consultorio_8'
-          ? '$911,200'
+          ? '$1,002,320'
           : selectedPackageNinos === 'presencial_naturaleza_single'
-          ? '$80,000'
+          ? '$88,000'
           : selectedPackageNinos === 'presencial_naturaleza_2'
-          ? '$152,000'
+          ? '$167,200'
           : selectedPackageNinos === 'presencial_naturaleza_4'
-          ? '$288,000'
+          ? '$316,800'
           : selectedPackageNinos === 'presencial_naturaleza_8'
-          ? '$544,000'
+          ? '$598,400'
           : '',
       features: [
         'Abordaje de problemas emocionales y de comportamiento como ansiedad y depresión.',
@@ -313,31 +313,31 @@ const Producto = () => {
     },
     {
       title: 'Terapia de Grupos',
-      price: '$149,000',
+      price: '$163,900',
       features: ['Red de apoyo entre personas con desafíos similares.', 'Fomento del crecimiento personal y comprensión mutua.', 'Desarrollo de habilidades colectivas para afrontar obstáculos.'],
       buttonText: 'Contactanos',
     },
     {
       title: 'Batería de riesgo psicosocial',
-      price: '$288,000',
+      price: '$316,800',
       features: ['Cumplimiento de regulaciones legales.', 'Prevención del estrés y acoso laboral.', 'Promoción del bienestar emocional de los trabajadores.'],
       buttonText: 'Contactanos',
     },
     {
       title: 'Formación y capacitación',
-      price: '$300,000',
+      price: '$330,000',
       features: ['Reducción del estrés laboral.', 'Mejora del equilibrio vida-trabajo.', 'Fomento de un entorno laboral saludable y productivo.'],
       buttonText: 'Contactanos',
     },
     {
       title: 'Liderazgo',
-      price: '$300,000',
+      price: '$330,000',
       features: ['Mejora de la comunicación efectiva.', 'Creación de un ambiente inclusivo.', 'Potenciación del bienestar y productividad de los equipos.'],
       buttonText: 'Contactanos',
     },
     {
       title: 'Habilidades blandas',
-      price: '$300,000',
+      price: '$330,000',
       features: ['Mejora de la inteligencia emocional y empatía.', 'Fortalecimiento del trabajo en equipo y liderazgo.', 'Desarrollo de adaptabilidad y resolución de conflictos.'],
       buttonText: 'Contactanos',
     },
