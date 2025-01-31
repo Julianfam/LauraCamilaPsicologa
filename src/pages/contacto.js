@@ -28,7 +28,7 @@ const Contact = () => {
         <a href="https://www.instagram.com/psicologa.lauracamila/" target="_blank" rel="noopener noreferrer">
           <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-8 w-72 border border-gray-400 rounded-lg shadow w-90vw mb-4">INSTAGRAM</button>
         </a>
-        <a href="https://wa.me/3224714724" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/00573224714724" target="_blank" rel="noopener noreferrer">
           <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-8 w-72 border border-gray-400 rounded-lg shadow w-90vw">WHATSAPP</button>
         </a>
       </div>
