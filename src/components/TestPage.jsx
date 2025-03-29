@@ -8,11 +8,7 @@ export default function TestPage({ id }) {
   const router = useRouter();
 
   if (!id || !testData[id]) {
-    return (
-      <div className="p-4 text-gray-700">
-        Test no encontrado (ID: {id})
-      </div>
-    );
+    return <div className="p-4 text-gray-700">Test no encontrado (ID: {id})</div>;
   }
 
   const { name, questions } = testData[id];
@@ -68,10 +64,7 @@ export default function TestPage({ id }) {
         {!finished ? (
           <div className="space-y-6">
             {questions.map((question) => (
-              <div
-                key={question.id}
-                className="p-6 bg-white rounded-xl shadow-md border-l-4 border-pink-300"
-              >
+              <div key={question.id} className="p-6 bg-white rounded-xl shadow-md border-l-4 border-pink-300">
                 <p className="mb-4 text-gray-700 font-medium">{question.text}</p>
                 <div className="flex gap-3 flex-wrap">
                   {[0, 1, 2, 3].map((value) => (
@@ -80,9 +73,7 @@ export default function TestPage({ id }) {
                       key={`answer-${question.id}-${value}`}
                       onClick={() => handleAnswer(questions.indexOf(question), value)}
                       className={`px-4 py-2 rounded-lg font-semibold transition ${
-                        answers[questions.indexOf(question)] === value
-                          ? 'bg-pink-400 text-white'
-                          : 'bg-pink-200 text-gray-700 hover:bg-pink-300'
+                        answers[questions.indexOf(question)] === value ? 'bg-pink-400 text-white' : 'bg-pink-200 text-gray-700 hover:bg-pink-300'
                       }`}
                       aria-label={`Seleccionar respuesta: ${getAnswerLabel(value)} para la pregunta ${question.text}`}
                     >
@@ -110,20 +101,10 @@ export default function TestPage({ id }) {
             </p>
             <p className="mb-6 text-gray-700">{getResultMessage(score, maxScore)}</p>
             <div className="flex gap-4 justify-center">
-              <button
-                type="button"
-                onClick={handlePrint}
-                className="px-4 py-2 bg-brown-600 text-white rounded-lg hover:bg-brown-700 transition"
-                aria-label="Imprimir resultados"
-              >
+              <button type="button" onClick={handlePrint} className="px-4 py-2 bg-brown-600 text-white rounded-lg hover:bg-brown-700 transition" aria-label="Imprimir resultados">
                 Imprimir
               </button>
-              <button
-                type="button"
-                onClick={handleSend}
-                className="px-4 py-2 bg-pink-400 text-white rounded-lg hover:bg-pink-500 transition"
-                aria-label="Enviar resultados a la psicóloga"
-              >
+              <button type="button" onClick={handleSend} className="px-4 py-2 bg-pink-400 text-white rounded-lg hover:bg-pink-500 transition" aria-label="Enviar resultados a la psicóloga">
                 Enviar a psicóloga
               </button>
             </div>
