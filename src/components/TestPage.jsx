@@ -51,7 +51,7 @@ export default function TestPage({ id }) {
           <button
             type="button"
             onClick={handleBack}
-            className="p-2 bg-brown-600 text-white rounded-full hover:bg-brown-700 transition flex items-center gap-2"
+            className="p-2 bg-brown-600 text-black rounded-full hover:bg-brown-700 transition flex items-center gap-2"
             aria-label="Volver a la página de tests"
           >
             <span>←</span> Atrás
@@ -73,7 +73,7 @@ export default function TestPage({ id }) {
                       key={`answer-${question.id}-${value}`}
                       onClick={() => handleAnswer(questions.indexOf(question), value)}
                       className={`px-4 py-2 rounded-lg font-semibold transition ${
-                        answers[questions.indexOf(question)] === value ? 'bg-pink-400 text-white' : 'bg-pink-200 text-gray-700 hover:bg-pink-300'
+                        answers[questions.indexOf(question)] === value ? 'bg-pink-400 text-black' : 'bg-pink-200 text-gray-700 hover:bg-pink-300'
                       }`}
                       aria-label={`Seleccionar respuesta: ${getAnswerLabel(value)} para la pregunta ${question.text}`}
                     >
@@ -86,7 +86,7 @@ export default function TestPage({ id }) {
             <button
               type="button"
               onClick={handleFinish}
-              className="w-full py-3 bg-brown-600 text-white rounded-lg font-semibold hover:bg-brown-700 transition disabled:bg-gray-400"
+              className="w-full py-3 bg-brown-600 text-black rounded-lg font-semibold hover:bg-brown-700 transition disabled:bg-gray-400"
               disabled={answers.length !== questions.length}
               aria-label="Finalizar el test"
             >
@@ -101,10 +101,10 @@ export default function TestPage({ id }) {
             </p>
             <p className="mb-6 text-gray-700">{getResultMessage(score, maxScore)}</p>
             <div className="flex gap-4 justify-center">
-              <button type="button" onClick={handlePrint} className="px-4 py-2 bg-brown-600 text-white rounded-lg hover:bg-brown-700 transition" aria-label="Imprimir resultados">
+              <button type="button" onClick={handlePrint} className="px-4 py-2 bg-brown-600 text-black rounded-lg hover:bg-brown-700 transition" aria-label="Imprimir resultados">
                 Imprimir
               </button>
-              <button type="button" onClick={handleSend} className="px-4 py-2 bg-pink-400 text-white rounded-lg hover:bg-pink-500 transition" aria-label="Enviar resultados a la psicóloga">
+              <button type="button" onClick={handleSend} className="px-4 py-2 bg-pink-400 text-black rounded-lg hover:bg-pink-500 transition" aria-label="Enviar resultados a la psicóloga">
                 Enviar a psicóloga
               </button>
             </div>
