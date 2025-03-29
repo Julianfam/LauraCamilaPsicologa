@@ -25,7 +25,11 @@ export default function Header() {
               Sobre
             </Link>
           </div>
-
+          <div className="p-8">
+            <Link legacyBehavior className="mr-5 p-8 hover:text-gray-900" href="/psychological-tests" passHref>
+              Tests Psicológicos
+            </Link>
+          </div>
           <DropdownMenu />
         </nav>
         <Link legacyBehavior href="/contacto" passHref>
