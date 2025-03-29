@@ -73,7 +73,7 @@ export default function TestPage({ id }) {
                       key={`answer-${question.id}-${value}`}
                       onClick={() => handleAnswer(questions.indexOf(question), value)}
                       className={`px-4 py-2 rounded-lg font-semibold transition ${
-                        answers[questions.indexOf(question)] === value ? 'bg-pink-400 text-black' : 'bg-pink-200 text-gray-700 hover:bg-pink-300'
+                        answers[questions.indexOf(question)] === value ? 'bg-red-500 text-white' : 'bg-pink-200 text-gray-700 hover:bg-red-500 hover:text-white'
                       }`}
                       aria-label={`Seleccionar respuesta: ${getAnswerLabel(value)} para la pregunta ${question.text}`}
                     >
