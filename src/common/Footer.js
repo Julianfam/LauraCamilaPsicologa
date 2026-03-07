@@ -52,11 +52,6 @@ const Footer = () => {
                 </Link>
               </div>
               <div className="mr-5 hover-text-gray-900 cursor-pointer">
-                <Link href="/gastronomia" passHref legacyBehavior>
-                  <div>Gastronomia</div>
-                </Link>
-              </div>
-              <div className="mr-5 hover-text-gray-900 cursor-pointer">
                 <Link href="/producto" passHref legacyBehavior>
                   <div>Producto</div>
                 </Link>
