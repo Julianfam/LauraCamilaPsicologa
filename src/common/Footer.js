@@ -103,7 +103,7 @@ const Footer = () => {
           <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
             Psicologa Laura camila
             <a href="www.juliandev.tech" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">
-              © 2024 @julianandrade
+              © 2026 @julianandrade
             </a>
           </p>
         </div>
