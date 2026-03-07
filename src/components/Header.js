@@ -24,12 +24,15 @@ export default function Header() {
         {/* Nav for desktop: horizontal, minimalist */}
         <nav className="hidden md:flex md:ml-auto md:mr-auto items-center text-base justify-center space-x-6">
           <Link legacyBehavior href="/producto" passHref>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className="hover:text-gray-900">Planes y Precios</a>
           </Link>
           <Link legacyBehavior href="/sobre" passHref>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className="hover:text-gray-900">Sobre</a>
           </Link>
           <Link legacyBehavior href="/psychological-tests" passHref>
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className="hover:text-gray-900">Tests Psicológicos</a>
           </Link>
           <DropdownMenu />
@@ -38,12 +41,13 @@ export default function Header() {
         {/* Contact button for desktop */}
         <div className="hidden md:flex">
           <Link legacyBehavior href="/contacto" passHref>
-            <button className="inline-flex items-center bg-red-100 border-0 py-1 px-3 focus:outline-none hover:bg-red-300 rounded text-base">
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+            <a className="inline-flex items-center bg-red-100 border-0 py-1 px-3 focus:outline-none hover:bg-red-300 rounded text-base">
               Contactanos
               <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"></path>
               </svg>
-            </button>
+            </a>
           </Link>
         </div>
 
@@ -62,6 +66,7 @@ export default function Header() {
         <div className="md:hidden bg-white shadow-lg absolute top-full right-0 w-48 z-10">
           <nav className="flex flex-col items-start text-base py-2 px-4 space-y-2">
             <Link legacyBehavior href="/producto" passHref>
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
               <a
                 className="hover:text-gray-900 w-full"
                 onClick={toggleMenu}
@@ -77,6 +82,7 @@ export default function Header() {
               </a>
             </Link>
             <Link legacyBehavior href="/sobre" passHref>
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
               <a
                 className="hover:text-gray-900 w-full"
                 onClick={toggleMenu}
@@ -92,6 +98,7 @@ export default function Header() {
               </a>
             </Link>
             <Link legacyBehavior href="/psychological-tests" passHref>
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
               <a
                 className="hover:text-gray-900 w-full"
                 onClick={toggleMenu}
@@ -108,15 +115,23 @@ export default function Header() {
             </Link>
             <DropdownMenu onClick={toggleMenu} />
             <Link legacyBehavior href="/contacto" passHref>
-              <button
+              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid, jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */}
+              <a
                 className="inline-flex items-center bg-red-100 border-0 py-1 px-3 focus:outline-none hover:bg-red-300 rounded text-base mt-2"
                 onClick={toggleMenu}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    toggleMenu();
+                  }
+                }}
               >
                 Contactanos
                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
-              </button>
+              </a>
             </Link>
           </nav>
         </div>
