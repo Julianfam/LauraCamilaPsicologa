@@ -31,7 +31,7 @@ export default function Imagen100() {
     {
       categoryText: 'Asesorias empresariales',
       titleText: 'Capacitaciones Grupales',
-      descriptionText: 'Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat 3.',
+      descriptionText: 'Comunicación, Inteligencia emocional, gestion de equipos, toma de decisiones y más',
       learnMoreText: 'Mas información',
       likesText: '1.2K 3',
       commentsText: '6 3',
