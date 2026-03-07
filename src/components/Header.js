@@ -24,13 +24,13 @@ export default function Header() {
         {/* Nav for desktop: horizontal, minimalist */}
         <nav className="hidden md:flex md:ml-auto md:mr-auto items-center text-base justify-center space-x-6">
           <Link legacyBehavior href="/producto" passHref>
-            <span className="hover:text-gray-900 cursor-pointer">Planes y Precios</span>
+            <a className="hover:text-gray-900">Planes y Precios</a>
           </Link>
           <Link legacyBehavior href="/sobre" passHref>
-            <span className="hover:text-gray-900 cursor-pointer">Sobre</span>
+            <a className="hover:text-gray-900">Sobre</a>
           </Link>
           <Link legacyBehavior href="/psychological-tests" passHref>
-            <span className="hover:text-gray-900 cursor-pointer">Tests Psicológicos</span>
+            <a className="hover:text-gray-900">Tests Psicológicos</a>
           </Link>
           <DropdownMenu />
         </nav>
@@ -51,28 +51,67 @@ export default function Header() {
         <div className="md:hidden flex items-center">
           <button onClick={toggleMenu} className="text-gray-900 focus:outline-none">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}></path>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isMenuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}></path>
             </svg>
           </button>
         </div>
       </div>
 
-      {/* Mobile menu: minimalist vertical dropdown */}
+      {/* Mobile menu: minimalist vertical dropdown, reduced width and padding for minimalism */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-lg absolute top-full left-0 w-full z-10">
-          <nav className="flex flex-col items-center text-base py-4 space-y-4">
+        <div className="md:hidden bg-white shadow-lg absolute top-full right-0 w-48 z-10">
+          <nav className="flex flex-col items-start text-base py-2 px-4 space-y-2">
             <Link legacyBehavior href="/producto" passHref>
-              <span className="hover:text-gray-900 cursor-pointer" onClick={toggleMenu}>Planes y Precios</span>
+              <a
+                className="hover:text-gray-900 w-full"
+                onClick={toggleMenu}
+                role="menuitem"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    toggleMenu();
+                  }
+                }}
+              >
+                Planes y Precios
+              </a>
             </Link>
             <Link legacyBehavior href="/sobre" passHref>
-              <span className="hover:text-gray-900 cursor-pointer" onClick={toggleMenu}>Sobre</span>
+              <a
+                className="hover:text-gray-900 w-full"
+                onClick={toggleMenu}
+                role="menuitem"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    toggleMenu();
+                  }
+                }}
+              >
+                Sobre
+              </a>
             </Link>
             <Link legacyBehavior href="/psychological-tests" passHref>
-              <span className="hover:text-gray-900 cursor-pointer" onClick={toggleMenu}>Tests Psicológicos</span>
+              <a
+                className="hover:text-gray-900 w-full"
+                onClick={toggleMenu}
+                role="menuitem"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    toggleMenu();
+                  }
+                }}
+              >
+                Tests Psicológicos
+              </a>
             </Link>
-            <DropdownMenu onClick={toggleMenu} /> {/* Asumiendo que DropdownMenu puede manejar onClick si es necesario */}
+            <DropdownMenu onClick={toggleMenu} />
             <Link legacyBehavior href="/contacto" passHref>
-              <button className="inline-flex items-center bg-red-100 border-0 py-1 px-3 focus:outline-none hover:bg-red-300 rounded text-base" onClick={toggleMenu}>
+              <button
+                className="inline-flex items-center bg-red-100 border-0 py-1 px-3 focus:outline-none hover:bg-red-300 rounded text-base mt-2"
+                onClick={toggleMenu}
+              >
                 Contactanos
                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
