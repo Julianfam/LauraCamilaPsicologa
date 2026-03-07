@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
-import imgcard from '/public/assets/imgservicios/laura-habilidades.jpg';
+import imgcard from '/public/assets/imgpsicologia/PsicologaLauraCamila_0274.jpg';
+
+
 
 const Contact = () => {
   const titleRef = useRef(null);
