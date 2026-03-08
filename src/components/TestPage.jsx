@@ -26,7 +26,7 @@ export default function TestPage({ id }) {
   const handlePrint = () => window.print();
   const handleSend = () => {
     const message = encodeURIComponent(`Hola, Psicóloga Laura Camila. Aquí están mis resultados del test "${name}": Puntaje ${score}/${maxScore}. ${getResultMessage(scorePercentage, id)}`);
-    window.open(`https://wa.me/00573224714724?text=${message}`, '_blank');
+    window.open(`https://wa.me/573224714724?text=${message}`, '_blank');
   };
   const handleBack = () => router.push('/psychological-tests');
 
