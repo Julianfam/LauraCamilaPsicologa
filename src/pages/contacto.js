@@ -20,7 +20,7 @@ const Contact = () => {
       </h3>
       <Image src={imgcard} alt="Tausha 3 Salsas" className="max-h-[80%] max-w-[400px] w-[80%] overflow-hidden mb-4" />
       <div className="flex flex-col items-center w-full py-4 space-y-4">
-        <a href="https://laura-camila-psicologa.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.psicologalauracamila.com.co/" target="_blank" rel="noopener noreferrer">
           <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-8 w-full max-w-xs border border-gray-400 rounded-lg shadow">WEB</button>
         </a>
         <a href="https://www.instagram.com/psicologa.lauracamila/" target="_blank" rel="noopener noreferrer">
