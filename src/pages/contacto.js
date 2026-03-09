@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
-import imgcard from '/public/assets/imgpsicologia/PsicologaLauraCamila_0274.jpg';
+import imgcard from '/public/assets/imgpsicologia/LauraCamilaLOGO-06.png';
 
 const Contact = () => {
   const titleRef = useRef(null);
@@ -28,6 +28,9 @@ const Contact = () => {
         </a>
         <a href="https://wa.me/00573224714724" target="_blank" rel="noopener noreferrer">
           <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-8 w-full max-w-xs border border-gray-400 rounded-lg shadow">WHATSAPP</button>
+        </a>
+        <a href="https://www.tiktok.com/@psicologalauracamila" target="_blank" rel="noopener noreferrer">
+          <button className="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-8 w-full max-w-xs border border-gray-400 rounded-lg shadow">TIKTOK</button>
         </a>
       </div>
     </div>
